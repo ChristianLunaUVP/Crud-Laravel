@@ -10,3 +10,4 @@ Route::get('/', function () {
 Route::resource('generos', 'App\Http\Controllers\GenerosController');
 Route::resource('canciones', 'App\Http\Controllers\CancionesController');
 Route::delete('/canciones/{id}/delete-image', [CancionesController::class, 'deleteImage']);
+Route::patch('/canciones/{id}', [CancionController::class, 'update']);
